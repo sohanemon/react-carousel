@@ -1,0 +1,40 @@
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vw;
+  align-items: center;
+}
+
+.image {
+  width: 1000px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.rarrow {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 3rem;
+  z-index: 10;
+  color: #000;
+}
+.larrow {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 3rem;
+  z-index: 10;
+  color: #000;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.09);
+}
